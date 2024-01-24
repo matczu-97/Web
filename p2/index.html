@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/p2/style.css" />
+</head>
+<body>
+    
+    <div class="calculator">
+        <div id="monitor" input>0</div>
+        <br>
+      <div class="memoryButtons">
+        <div class="button" onclick="FunctionalMessageNoReady()">MC</div>
+        <div class="button" onclick="FunctionalMessageNoReady()">MR</div>
+        <div class="button" onclick="FunctionalMessageNoReady()">Mּ+</div>
+        <div class="button" onclick="FunctionalMessageNoReady()">M-</div>
+        <div class="button" onclick="FunctionalMessageNoReady()">MS</div>
+        <div class="button" onclick="FunctionalMessageNoReady()">M▼</div>
+      </div>
+
+      <div class="buttons">
+        <div class="button" onclick="FunctionalMessageNoReady()">2<sup>nd</sup></div>
+        <div class="button" onclick="createEquation(eval(Math.PI))">π</div>
+        <div class="button" onclick="createEquation(eval(Math.E))">e</div>
+        <div class="button" onclick="deleteAll()">C</div>
+        <div class="button" onclick="removeOneChar()">⌫</div>
+      </div>
+
+      <div class="buttons">
+        <div class="button" onclick="createEquation('**2')">x<sup>2</sup></div>
+        <div class="button" onclick="createEquation('1/')">1<sub>/x</sub></div>
+        <div class="button" onclick="createEquation('Math.abs(')">|x|</div>
+        <div class="button" onclick="createEquation(eval(Math.E) + '**' )">exp</div>
+        <div class="button" onclick="createEquation('%')">mod</div>
+      </div>
+
+      <div class="buttons">
+        <div class="button" onclick="createEquation('Math.sqrt(')">√x</div>
+        <div class="button" onclick="createEquation('(')">(</div>
+        <div class="button" onclick="createEquation(')')">)</div>
+        <div class="button" onclick="factorial()">n!</div>
+        <div class="simpleButton" onclick="createEquation('/')">&divide;</div>
+      </div>
+
+      <div class="buttons">
+        <div class="button" onclick="createEquation('**')">x<sup>y</sup></div>
+        <div class="buttonNum" onclick="createEquation('7')">7</div>
+        <div class="buttonNum" onclick="createEquation('8')">8</div>
+        <div class="buttonNum" onclick="createEquation('9')">9</div>
+        <div class="simpleButton" onclick="createEquation('*')">X</div>
+      </div>
+
+      <div class="buttons">
+        <div class="button" onclick="createEquation('10**')">10<sup>x</sup></div>
+        <div class="buttonNum" onclick="createEquation('4')">4</div>
+        <div class="buttonNum" onclick="createEquation('5')">5</div>
+        <div class="buttonNum" onclick="createEquation('6')">6</div>
+        <div class="simpleButton" onclick="createEquation('-')">-</div>
+      </div>
+
+      <div class="buttons">
+        <div class="button" onclick="createEquation('Math.log10(')">log</div>
+        <div class="buttonNum" onclick="createEquation('1')">1</div>
+        <div class="buttonNum" onclick="createEquation('2')">2</div>
+        <div class="buttonNum" onclick="createEquation('3')">3</div>
+        <div class="simpleButton" onclick="createEquation('+')">+</div>
+      </div>
+
+      <div class="buttons">
+        <div class="button" onclick="createEquation('Math.log(')">ln</div>
+        <div class="buttonNum" onclick="FunctionalMessageNoReady()">+<sub>/-</sub></div>
+        <div class="buttonNum" onclick="createEquation('0')">0</div>
+        <div class="buttonNum" onclick="createEquation('.')">.</div>
+        <div class="result" onclick="solveEquation()">=</div>
+      </div>
+      
+    </div>
+    <script src="/p2/calculatorScript.js"></script>
+</body>
+</html>
